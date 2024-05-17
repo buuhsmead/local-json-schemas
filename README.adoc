@@ -1,0 +1,29 @@
+== local-json-schemas
+JSON Schemas local usage
+
+
+=== Inside a file
+
+# yaml-language-server: $schema=<location>
+
+
+
+
+=== VS Code / Codium
+
+You need to edit settings file to map benchmark configuration files (with .hf.yaml extension) to the schema, adding
+
+"yaml.schemas" : {
+    "file:///path/to/local-json-schemas/hyperfoil/schema-0.25.2.json" : "/*.hf.yaml"
+},
+
+
+
+=== Other schemas 
+
+found schemas on the internet but not local
+
+
+https://github.com/jirutka/keycloak-json-schema - keycloak realm import 
+
+
